@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">
-<title>Portfolio</title>
+<title>Connor S – Portfolio</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pdf-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+
 </head>
 
 <body>
-<object data="Portfolio.pdf" type="application/pdf" width="100%" height="720px">
-  <p>Your browser can't display the PDF. 
-  <a href="Portfolio.pdf">Download it here.</a></p>
-</object>
+
+<div class="pdf-container">
+    <iframe src="Portfolio.pdf"></iframe>
+</div>
+
 </body>
 </html>
